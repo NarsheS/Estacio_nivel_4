@@ -29,9 +29,7 @@ export class LivroListaComponent implements OnInit {
   }
 
   obterNome = (codEditora: number): string => {
-    console.log('Getting name for codEditora:', codEditora);
     const nomeEditora = this.servEditora.getNomeEditora(codEditora);
-    console.log('Found name:', nomeEditora);
     return nomeEditora;
   }
   
